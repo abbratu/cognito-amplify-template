@@ -3,10 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "start": "ng serve --project cognito-amplify-app",
+    "build": "ng build --project cognito-amplify-app",
+    "watch": "ng build --watch --project cognito-amplify-app --configuration development",
+    "test": "ng test --project cognito-amplify-app"
   },
   "private": true,
   "dependencies": {
@@ -23,6 +23,7 @@
     "zone.js": "~0.13.0"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "^16.1.0",
     "@angular/cli": "~16.1.0",
     "@angular/compiler-cli": "^16.1.0",
     "@types/jasmine": "~4.3.0",
